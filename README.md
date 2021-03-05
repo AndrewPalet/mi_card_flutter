@@ -3,6 +3,7 @@
 Created a cross platform mobile app showcasing my information. It shows my phone number and email address.
 
 App Screenshot
+
 ![App Screenshot](https://github.com/AndrewPalet/mi_card_flutter/blob/master/images/app-screen.png "App Screenshot")
 
 
