@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 70.0,
@@ -35,52 +36,47 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.0,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '(972) 801 7808',
-                      style: TextStyle(
-                        color: Colors.teal[900],
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal[100],
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone_iphone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '(972) 801 7808',
+                    style: TextStyle(
+                      color: Colors.teal[900],
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'andrewpalet@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal[900],
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    Text(
-                      'andrewpalet@gmail.com',
-                      style: TextStyle(
-                        color: Colors.teal[900],
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
